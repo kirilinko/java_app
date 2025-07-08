@@ -8,7 +8,7 @@ public class Logind{
         String userDB = "root";
         String passDB = "784dss";
 
-        try (Connection conn = DriverManager.getConnection(url, userDB, passDB);
+        try (Connection conn = DriverManager.getConnection(url, userDB, pass);
              Statement stmt = conn.createStatement()) {
 
             Scanner scanner = new Scanner(System.in);
