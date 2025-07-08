@@ -6,9 +6,9 @@ public class Login{
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/mydb";  
         String userDB = "root";
-        String passwordDB = "784dss";
+        String passDB = "784dss";
 
-        try (Connection conn = DriverManager.getConnection(url, userDB, passwordDB);
+        try (Connection conn = DriverManager.getConnection(url, userDB, passDB);
              Statement stmt = conn.createStatement()) {
 
             Scanner scanner = new Scanner(System.in);
