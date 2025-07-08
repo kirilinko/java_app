@@ -6,7 +6,7 @@ public class Logind{
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/mydb";  
         String userDB = "root";
-        String passDB = "784dss";
+        String passDB = "87Sq4d5@x02s.5sd";
 
         try (Connection conn = DriverManager.getConnection(url, userDB, pass);
              Statement stmt = conn.createStatement()) {
