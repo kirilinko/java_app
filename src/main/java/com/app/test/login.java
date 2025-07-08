@@ -17,7 +17,7 @@ public class Login {
 
             String query = "SELECT * FROM users WHERE username = '" + username + "' AND password = '" + password + "'";
             
-            try (PreparedStatement stmt = conn.prepareStatement(query)) {
+            try (PreparedStatement stmt = conn.prepareStatement(query)) { 
                 ResultSet rs = stmt.executeQuery();
 
                 if (rs.next()) {
