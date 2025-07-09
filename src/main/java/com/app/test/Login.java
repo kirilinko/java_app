@@ -10,10 +10,10 @@ public class Login {
         try (Connection conn = DriverManager.getConnection(url, userDB, dbcode)) {
             Scanner scanner = new Scanner(System.in);
             
-            System.err.print("Entrez votre nom d'utilisateur : ");
+            System.out.print("Entrez votre nom d'utilisateur : ");
             String username = scanner.nextLine();
             
-            System.err.print("Entrez votre mot de passe : ");
+            System.out.print("Entrez votre mot de passe : ");
             String password = scanner.nextLine();
             
             String query = "SELECT * FROM users WHERE username = '" + username + "' AND password = '" + password + "'";
